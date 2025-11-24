@@ -12,7 +12,7 @@ function App(props) {
   const [search, setSearch] = useState('eks');
   const [error, setError] = useState(null);
 
-  const url = 'http://k8s-eksdemogroup-e0353f9ab7-1616630418.ap-northeast-2.elb.amazonaws.com/contents/${search}';
+  const url = `http://k8s-eksdemogroup-e0353f9ab7-1616630418.ap-northeast-2.elb.amazonaws.com/contents/${search}`;
 
   useEffect(() => {
     async function fetchData() {
